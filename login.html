@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js"></script>
+    <title>Login</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Your Snow Removal Service</h1>
+            <nav>
+                <ul>
+                    <li><a href="#" onclick="goToHome()">Home</a></li>
+                    <li><a href="#" onclick="goToServices()">Services</a></li>
+                    <li><a href="#" onclick="goToContact()">Contact</a></li>
+                    <li><a href="#" onclick="goToAbout()">About</a></li>
+                    <li class="login"><a href="#" onclick="showLoginForm()">Login</a></li>
+                    <li class="register"><a href="register.html">Register</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="login">
+        <div class="container">
+            <h2>Login</h2>
+            <form id="loginForm" action="#" autocomplete="off">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </section>
+
+</body>
+
+</html>

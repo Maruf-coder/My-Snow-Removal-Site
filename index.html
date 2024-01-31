@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Brother Seasonal Services</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .phone-number {
+            margin-right: 20px;
+        }
+
+        .social-media-links img {
+            width: 30px;
+            margin: 0 10px;
+        }
+
+        #getQuoteButton {
+            background-color: #3498db;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #getQuoteButton:hover {
+            background-color: #2980b9;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 20px 0;
+        }
+
+        section h2 {
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .services-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .service {
+            width: 300px;
+            margin: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .service:hover {
+            transform: scale(1.05);
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .footer h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="phone-number">
+                <p>Call Us: (123) 456-7890</p>
+            </div>
+
+            <h1>Brother Seasonal Services</h1>
+
+            <div class="social-media-links">
+                <a href="https://www.facebook.com/" target="_blank"><img src="facebook.png" alt="Facebook"></a>
+                <a href="https://www.youtube.com/" target="_blank"><img src="youtube.png" alt="YouTube"></a>
+            </div>
+
+            <a id="getQuoteButton" href="assistance_form.html">Get a Quote</a>
+
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="container">
+            <h2>Welcome to Brother Seasonal Services</h2>
+            <p>Reliable and efficient snow removal to keep your property safe and accessible.</p>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-container">
+                <div class="service" onclick="showServiceDetails('Service One', 'Details for Service One.')">
+                    <img src="R:/HTML Files/4rd Project/one.jpg" alt="Service One">
+                    <h3>Snow Removal Service</h3>
+                    <p>Professional snow removal for driveways.</p>
+                </div>
+                <div class="service" onclick="showServiceDetails('Service Two', 'Details for Service Two.')">
+                    <img src="R:/HTML Files/4rd Project/two.jpg" alt="Service Two">
+                    <h3>Landscaping Services</h3>
+                    <p>Residential Landscaping services tailored to your needs.</p>
+                </div>
+                <div class="service" onclick="showServiceDetails('Service Three', 'Details for Service Three.')">
+                    <img src="R:/HTML Files/4rd Project/three.jpg" alt="Service Three">
+                    <h3>Salting Services</h3>
+                    <p>Salting services to prevent ice accumulation on your property.</p>
+                </div>
+                <div class="service" onclick="showServiceDetails('Service Four', 'Details for Service Four.')">
+                    <img src="R:/HTML Files/4rd Project/four.jpg" alt="Service Four">
+                    <h3>Yard Cleanup Services</h3>
+                    <p>Commercial and residential leaf cleaning Services.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="help">
+        <div class="container">
+            <h2>Need Help?</h2>
+            <button id="helpButton" onclick="toggleAssistanceForm()">Get Assistance</button>
+            <form id="helpForm" style="display: none;" onsubmit="submitAssistanceForm(event)">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="contactNumber">Contact Number:</label>
+                <input type="tel" id="contactNumber" name="contactNumber" required>
+
+                <label for="request">How can we assist you?</label>
+                <textarea id="request" name="request" rows="4" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="container">
+            <h3>Brother Seasonal Services</h3>
+        </div>
+    </section>
+
+
+    // You can keep your existing JavaScript functions here
+    </script>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

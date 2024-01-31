@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Get a Quote</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Brother Seasonal Services</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="assistance_form.html">Get a Quote</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="help">
+        <div class="container">
+            <button id="helpButton" onclick="toggleAssistanceForm()">Get a Quote</button>
+            <form id="helpForm" style="display: none;" onsubmit="submitAssistanceForm(event)">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="contactNumber">Contact Number:</label>
+                <input type="tel" id="contactNumber" name="contactNumber" required>
+
+                                <label for="serviceType">Select Type of Service:</label>
+                <select id="serviceType" name="serviceType" required>
+                    <option value="Snow Removal">Snow Removal Service</option>
+                    <option value="Landscaping">Landscaping Services</option>
+                    <option value="Salting">Salting Services</option>
+                    <option value="Yard Cleanup">Yard Cleanup Services</option>
+                </select>
+
+                <label for="request">what type of services you like?</label>
+                <textarea id="request" name="request" rows="4" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
