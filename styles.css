@@ -60,38 +60,29 @@ nav a {
 
 /* Rearrange navigation elements for mobile */
 @media screen and (max-width: 767px) {
-    nav ul {
+    #top-section {
+        display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
+        background-color: #333;
+        color: white;
+        padding: 10px;
     }
 
-    nav a {
-        margin-bottom: 10px;
+    #bottom-section {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px;
     }
-}
 
-#top-section {
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    text-align: center;
-}
+    nav ul {
+        display: none;
+    }
 
-#bottom-section {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
-}
-
-#home, #services, #contact, #about {
-    display: none; /* Initially hide the tabs */
-}
-
-/* Add media query for mobile responsiveness */
-@media screen and (max-width: 767px) {
     #home, #services, #contact, #about {
-        display: block; /* Display tabs for mobile */
+        display: block;
         margin-top: 10px;
     }
 }
