@@ -22,13 +22,15 @@ header h1 {
 
 nav {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column; /* Adjust for mobile */
+    align-items: center; /* Center items in mobile */
 }
 
 nav ul {
     list-style: none;
     display: flex;
+    flex-direction: column; /* Adjust for mobile */
+    align-items: center; /* Center items in mobile */
     gap: 20px;
 }
 
@@ -38,20 +40,14 @@ nav a {
 }
 
 /* Add media query for mobile responsiveness */
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 768px) {
     nav {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row; /* Restore for larger screens */
+        justify-content: space-between; /* Restore for larger screens */
     }
 
     nav ul {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-
-    #hero {
-        text-align: center;
+        flex-direction: row; /* Restore for larger screens */
     }
 }
 
