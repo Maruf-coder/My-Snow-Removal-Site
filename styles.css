@@ -22,15 +22,13 @@ header h1 {
 
 nav {
     display: flex;
-    flex-direction: column; /* Adjust for mobile */
-    align-items: center; /* Center items in mobile */
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    flex-direction: column; /* Adjust for mobile */
-    align-items: center; /* Center items in mobile */
     gap: 20px;
 }
 
@@ -38,38 +36,6 @@ nav a {
     color: white;
     text-decoration: none;
 }
-
-/* Add media query for mobile responsiveness */
-@media screen and (min-width: 768px) {
-    nav {
-        flex-direction: row; /* Restore for larger screens */
-        justify-content: space-between; /* Restore for larger screens */
-    }
-
-    nav ul {
-        flex-direction: row; /* Restore for larger screens */
-    }
-}
-
-/* Add a media query for tablet responsiveness */
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-    .services-container .service {
-        width: calc(33.333% - 20px);
-    }
-}
-
-/* Add media query for mobile responsiveness */
-@media screen and (max-width: 767px) {
-    nav ul {
-        display: none;
-    }
-
-    #home, #services, #contact, #about {
-        display: block;
-        margin-top: 10px;
-    }
-}
-
 
 #hero {
     background-color: #eee;
