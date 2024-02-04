@@ -31,6 +31,9 @@ function submitAssistanceForm(event) {
     var request = document.getElementById('request').value;
     alert('Assistance form submitted successfully!');
 }
+function showServiceDetails(title, details) {
+    // Add your logic to handle service details display
+}
 
 function goToHome() {
     window.location.href = 'index.html';
