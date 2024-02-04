@@ -1,194 +1,60 @@
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-}
+<!DOCTYPE html>
+<html lang="en">
 
-.container {
-    width: 80%;
-    margin: 0 auto;
-}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Our Services</title>
+</head>
 
-header {
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
-}
+<body>
 
-header h1 {
-    margin: 0;
-}
+    <header>
+        <div class="container">
+            <h1>Your Snow Removal Service</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="assistance_form.html">Get a Quote</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+    <section id="content">
+        <div class="container">
+            <h2>Our Services</h2>
+            <p>Explore our professional snow removal services tailored to your needs.</p>
+            <div class="services-container">
+                <div class="service" onclick="showServiceDetails('Service One', 'Details for Service One.')">
+                    <img src="one.jpg" alt="Service One">
+                    <h3>Service One</h3>
+                    <p>Professional snow removal for driveways.</p>
+                </div>
+                <div class="service" onclick="showServiceDetails('Service Two', 'Details for Service Two.')">
+                    <img src="two.jpg" alt="Service Two">
+                    <h3>Service Two</h3>
+                    <p>Residential snow removal services tailored to your needs.</p>
+                </div>
+                <div class="service" onclick="showServiceDetails('Service Three', 'Details for Service Three.')">
+                    <img src="three.jpg" alt="Service Three">
+                    <h3>Service Three</h3>
+                    <p>Salting services to prevent ice accumulation on your property.</p>
+                </div>
+                <div class="service" onclick="showServiceDetails('Service Four', 'Details for Service Four.')">
+                    <img src="four.jpg" alt="Service Four">
+                    <h3>Service Four</h3>
+                    <p>Commercial snow removal for businesses and public spaces.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
+    <script src="main.js"></script>
+</body>
 
-nav a {
-    color: white;
-    text-decoration: none;
-}
-
-/* Add media query for mobile responsiveness */
-@media screen and (max-width: 767px) {
-    nav {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-/* Add a media query for tablet responsiveness */
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-    .services-container .service {
-        width: calc(33.333% - 20px);
-    }
-}
-
-#hero {
-    background-color: #eee;
-    padding: 40px 0;
-    text-align: center;
-}
-
-#hero h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-#services {
-    padding: 40px 0;
-}
-
-.services-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.service {
-    text-align: center;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    overflow: hidden;
-    cursor: pointer;
-    width: calc(25% - 20px);
-}
-
-.service img {
-    width: 100%;
-    height: auto;
-}
-
-.service h3 {
-    margin: 10px 0;
-}
-
-.service p {
-    color: #555;
-    margin: 0;
-}
-
-#help {
-    background-color: #eee;
-    padding: 40px 0;
-    text-align: center;
-}
-
-#helpButton {
-    cursor: pointer;
-    background-color: #333;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-}
-
-form {
-    display: none;
-}
-
-form label,
-form textarea,
-form input {
-    display: block;
-    margin-bottom: 10px;
-    width: 100%;
-}
-
-form textarea {
-    resize: vertical;
-}
-
-form button {
-    cursor: pointer;
-    background-color: #333;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-}
-
-.footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
-
-.footer h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.footer a {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
-}
-
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.7);
-}
-
-.modal-content {
-    background-color: #fefefe;
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-}
-
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
+</html>
