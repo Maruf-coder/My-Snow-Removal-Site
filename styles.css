@@ -58,6 +58,19 @@ nav a {
     }
 }
 
+/* Add media query for mobile responsiveness */
+@media screen and (max-width: 767px) {
+    nav ul {
+        display: none;
+    }
+
+    #home, #services, #contact, #about {
+        display: block;
+        margin-top: 10px;
+    }
+}
+
+
 #hero {
     background-color: #eee;
     padding: 40px 0;
